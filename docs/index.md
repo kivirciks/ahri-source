@@ -1,15 +1,16 @@
 ---
 home: true
-heroImage: https://v1.vuepress.vuejs.org/hero.png
-tagline: Architectures of artificial intelligence systems labs
-actionText: Quick Start →
-actionLink: /guide/
+heroText: Архитектуры систем искусственного интеллекта
+heroImage:  https://cdn-icons-png.flaticon.com/512/2083/2083213.png
+tagline: Лабораторные работы
+actionText: Начать →
+actionLink: /task/
 features:
-- title: Feature 1 Title
-  details: Feature 1 Description
-- title: Feature 2 Title
-  details: Feature 2 Description
-- title: Feature 3 Title
-  details: Feature 3 Description
-footer: Made by Zeio Nara with ❤️
+- title: Определение цели и задач проекта
+  details: Выбор задачи, которую можно решить в рамках данного курса
+- title: Построение моделей
+  details: Разработка автоматизированного пайплайна по сбору данных и обучению моделей
+- title: Развертывание моделей
+  details: Разработка HTTP сервера для обеспечения доступа к предложенным моделям
+footer: Made by ISST with ❤️
 ---
