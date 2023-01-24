@@ -15,9 +15,5 @@
   "license": "MIT",
   "devDependencies": {
     "vuepress": "^1.9.8"
-  },
-  "dependencies": {
-    "node": "^19.4.0",
-    "npm": "^9.3.1"
   }
 }
