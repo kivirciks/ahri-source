@@ -29,7 +29,13 @@ module.exports = {
    */
   themeConfig: {
     variables: {
-        nLabs: 6
+        nTasks: 6,
+        tasks: [
+            {
+                minScore: 5,
+                maxScore: 15
+            }
+        ]
     },
     repo: '',
     editLinks: false,
