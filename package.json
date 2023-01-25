@@ -1,7 +1,7 @@
 {
   "name": "ahri",
   "version": "0.0.1",
-  "description": "Architectures of artificial intelligence systems labs",
+  "description": "Practical tasks for the 'Architecture of Artificial Intelligence Systems' discipline",
   "main": "index.js",
   "authors": {
     "name": "Zeio Nara",

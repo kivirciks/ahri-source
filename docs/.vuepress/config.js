@@ -4,7 +4,7 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'Архитектуры систем искусственного интеллекта',
+  title: 'Архитектура систем искусственного интеллекта',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -28,6 +28,9 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
+    variables: {
+        nLabs: 6
+    },
     repo: '',
     editLinks: false,
     docsDir: '',
@@ -46,11 +49,21 @@ module.exports = {
     sidebar: {
       '/task/': [
         {
-          title: 'Задания',
+          title: 'Описание курса',
           collapsable: false,
           children: [
             '',
-            'using-vue',
+            'glossary',
+            'objective',
+            'structure'
+          ]
+        },
+        {
+          title: 'Лабораторные работы',
+          collapsable: false,
+          children: [
+            'task/1',
+            'task/2'
           ]
         }
       ],
