@@ -18,6 +18,7 @@
   },
   "dependencies": {
     "@adamdehaven/vuepress-plugin-custom-tooltip": "^1.4.3",
-    "@vuepress/plugin-back-to-top": "^1.9.8"
+    "@vuepress/plugin-back-to-top": "^1.9.8",
+    "@vuepress/plugin-nprogress": "^1.9.8"
   }
 }

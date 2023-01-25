@@ -37,11 +37,12 @@ module.exports = {
             }
         ]
     },
-    repo: '',
+    repo: 'https://github.com/MANASLU8/ahri-source',
     editLinks: false,
     docsDir: '',
-    editLinkText: '',
-    lastUpdated: false,
+    editLinks: true,
+    lastUpdated: true,
+    docsDir: 'docs',
     nav: [
       {
         text: 'Задания',
@@ -82,6 +83,7 @@ module.exports = {
   plugins: [
     '@vuepress/plugin-back-to-top',
     '@vuepress/plugin-medium-zoom',
+    '@vuepress/plugin-nprogress',
     [
         '@adamdehaven/vuepress-plugin-custom-tooltip',
         {
