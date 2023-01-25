@@ -1,5 +1,5 @@
 {
-  "name": "ahri.github.io",
+  "name": "ahri",
   "version": "0.0.1",
   "description": "Architectures of artificial intelligence systems labs",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "name": "Zeio Nara",
     "email": "zeionara@gmail.com"
   },
-  "repository": "https://github.com/MANASLU8/ahri.github.io.git",
+  "repository": "https://github.com/MANASLU8/ahri-source.git",
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
