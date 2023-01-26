@@ -29,11 +29,35 @@ module.exports = {
    */
   themeConfig: {
     variables: {
-        nTasks: 6,
+        nTasks: '6 + 1',
         tasks: [
             {
                 minScore: 5,
-                maxScore: 15
+                maxScore: 10
+            },
+            {
+                minScore: 5,
+                maxScore: 10
+            },
+            {
+                minScore: 10,
+                maxScore: 20
+            },
+            {
+                minScore: 5,
+                maxScore: 20
+            },
+            {
+                minScore: 5,
+                maxScore: 10
+            },
+            {
+                minScore: 5,
+                maxScore: 10
+            },
+            {
+                minScore: 15,
+                maxScore: 20
             }
         ]
     },
