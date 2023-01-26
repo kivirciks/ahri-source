@@ -103,6 +103,22 @@ module.exports = {
           ]
         }
       ],
+      '/project/': [
+        {
+          title: 'Проекты участников курса',
+          collapsable: false,
+          children: [
+            '',
+            {
+                title: 'soy',
+                children: [
+                    'soy/',
+                    'soy/task/1',
+                ]
+            }
+          ]
+        }
+      ]
     }
   },
 
