@@ -1,7 +1,7 @@
 ---
 home: true
 heroText: Архитектура систем искусственного интеллекта
-heroImage:  https://cdn-icons-png.flaticon.com/512/2083/2083213.png
+heroImage:  /logo.png
 tagline: Лабораторные работы
 actionText: Начать →
 actionLink: /task/
