@@ -30,7 +30,7 @@
 - Тексты резюме представлены в свободной форме. что приближает набор данных к реальным данным. которые будут использоваться при использовании модели.
 - Данные возможно разметить небольшим количеством асессоров.
 
-![Рисунок 1. Распределение вакансий по позициям](C:\Users\User\Katerina\1_year_MA\AI_systems_architecture\docs\project\Curriculum_Vitae_screening\imgs\category.png)
+![Рисунок 1. Распределение вакансий по позициям](https://github.com/mashinakatherina/AI_systems_architecture/blob/master/docs/project/Curriculum_Vitae_screening/imgs/category.png)
 
-![Рисунок 1. Распределение вакансий по позициям в процентах](C:\Users\User\Katerina\1_year_MA\AI_systems_architecture\docs\project\Curriculum_Vitae_screening\imgs\category_round.png)
+![Рисунок 1. Распределение вакансий по позициям в процентах](https://github.com/mashinakatherina/AI_systems_architecture/blob/master/docs/project/Curriculum_Vitae_screening/imgs/category_round.png)
 
