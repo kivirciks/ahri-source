@@ -5,3 +5,4 @@
 | Проект | Автор(ы) |
 | --- | --- |
 | [soy](./soy/) | Пушкин Александр Сергеевич, Крузенштерн Иван Федорович |
+|[curriculum-vitae-screening](https://github.com/mashinakatherina/curriculum-vitae-screening)| Гораш Вячеслав, Машина Екатерина|
