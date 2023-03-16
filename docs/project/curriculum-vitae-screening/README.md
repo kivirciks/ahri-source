@@ -29,11 +29,11 @@
 |    3 | Data Science | Skills â¢ R â¢ Python â¢ SAP HANA â¢ Table...     |
 |    4 | Data Science | Education Details \r\n MCA YMCAUST, Faridab...    |
 
-![Рисунок 1. Распределение вакансий по позициям](https://github.com/mashinakatherina/AI_systems_architecture/blob/master/docs/project/Curriculum_Vitae_screening/imgs/category.png)
+![Рисунок 1. Распределение вакансий по позициям](https://github.com/mashinakatherina/AI_systems_architecture/blob/master/docs/project/curriculum-vitae-screening/imgs/category.png)
 
 Рисунок 1. Распределение вакансий по позициям
 
-![Рисунок 2. Распределение вакансий по позициям в процентах](https://github.com/mashinakatherina/AI_systems_architecture/blob/master/docs/project/Curriculum_Vitae_screening/imgs/category_round.png)
+![Рисунок 2. Распределение вакансий по позициям в процентах](https://github.com/mashinakatherina/AI_systems_architecture/blob/master/docs/project/curriculum-vitae-screening/imgs/category_round.png)
 
 Рисунок 2. Распределение вакансий по позициям в процентах
 
