@@ -8,3 +8,4 @@
 | [curriculum-vitae-screening](./curriculum-vitae-screening) | Гораш Вячеслав, Машина Екатерина|
 | [habr-posts-likes-prediction](./habr-posts-likes-prediction/) | Беликов Павел, Веснин Дмитрий |
 | [heart-desease-risk](./heart-desease-risk/) | Ефаринов Павел |
+| [classification-crop-types](./classification-crop-types/) | Солодкая Мария |
