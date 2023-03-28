@@ -9,3 +9,4 @@
 | [habr-posts-likes-prediction](./habr-posts-likes-prediction/) | Беликов Павел, Веснин Дмитрий |
 | [heart-desease-risk](./heart-desease-risk/) | Ефаринов Павел |
 | [wine-predictor](./wine-predictor/) | Кунаковский Артём |
+| [classification-crop-types](./classification-crop-types/) | Солодкая Мария |
