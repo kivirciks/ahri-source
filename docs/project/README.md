@@ -10,3 +10,4 @@
 | [heart-desease-risk](./heart-desease-risk/) | Ефаринов Павел |
 | [wine-predictor](./wine-predictor/) | Кунаковский Артём |
 | [classification-crop-types](./classification-crop-types/) | Солодкая Мария |
+| [anime-recommender](./anime-recommender/) | Шерман Марк, Федотовских Евгений |
