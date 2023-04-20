@@ -12,3 +12,4 @@
 | [classification-crop-types](./classification-crop-types/) | Солодкая Мария |
 | [anime-recommender](./anime-recommender/) | Шерман Марк, Федотовских Евгений |
 | [electricity-consumption-forecasting](./electricity-consumption-forecasting/) | Полежаева Евгения |
+| [super-resolution](./super-resolution/) | Строкова Анастасия |
