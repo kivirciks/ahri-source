@@ -1,0 +1,81 @@
+name: Main Workflow
+on: [workflow_dispatch]
+jobs:
+  LoadDataset:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repo content
+        uses: actions/checkout@v3
+      - name: install kaggle API
+        run: pip install kaggle
+      - name: download dataset
+        env:
+          KAGGLE_USERNAME: avstrokova
+          KAGGLE_KEY: 5e2c622209c9f22356e8e944eebba69c
+        run: kaggle datasets download avstrokova/div2-k-dataset-for-super-resolution
+      - name: unpack dataset archive
+        run: unzip div2-k-dataset-for-super-resolution.zip
+
+  PreprocessDataset:
+    runs-on: ubuntu-latest
+    needs: LoadDataset
+    steps:
+      - name: checkout repo content
+        uses: actions/checkout@v3
+      - name: process_data
+        env:
+          DB_USERNAME: github
+          DB_PASSWORD: ${{secrets.DBPASSWORD}}
+        run: python preprocessing.ipynb
+
+  EDSR_Training:
+    runs-on: ubuntu-latest
+    needs: PreprocessDataset
+    steps:
+      - name: checkout repo content
+        uses: actions/checkout@v3
+      - name: install numpy
+        run: pip install numpy
+      - name: install tensorflow
+        run: pip install tensorflow
+      - name: install yandex disk
+        run: pip install yadisk
+      - name: training
+        env:
+          DB_USERNAME: github
+          DB_PASSWORD: ${{secrets.DBPASSWORD}}
+        run: python edsr_train.py
+
+  WDSR_Training:
+    runs-on: ubuntu-latest
+    needs: PreprocessDataset
+    steps:
+      - name: checkout repo content
+        uses: actions/checkout@v3
+      - name: install numpy
+        run: pip install numpy
+      - name: install tensorflow
+        run: pip install tensorflow
+      - name: install tensorflow-addons
+        run: pip install tensorflow-addons
+      - name: training
+        env:
+          DB_USERNAME: github
+          DB_PASSWORD: ${{secrets.DBPASSWORD}}
+        run: python wdsr_train.py
+        
+  SRGAN_Training:
+    runs-on: ubuntu-latest
+    needs: PreprocessDataset
+    steps:
+      - name: checkout repo content
+        uses: actions/checkout@v3
+      - name: install numpy
+        run: pip install numpy
+      - name: install tensorflow
+        run: pip install tensorflow
+      - name: training
+        env:
+          DB_USERNAME: github
+          DB_PASSWORD: ${{secrets.DBPASSWORD}}
+        run: python srgan_train.py
