@@ -11,10 +11,12 @@ jobs:
       - name: download dataset
         env:
           KAGGLE_USERNAME: avstrokova
-          KAGGLE_KEY: 5e2c622209c9f22356e8e944eebba69c
+          KAGGLE_KEY: ${{secrets.KAGGLE_USERNAME}}
         run: kaggle datasets download avstrokova/div2-k-dataset-for-super-resolution
       - name: unpack dataset archive
         run: unzip div2-k-dataset-for-super-resolution.zip
+
+
 
   PreprocessDataset:
     runs-on: ubuntu-latest
@@ -27,6 +29,8 @@ jobs:
           DB_USERNAME: github
           DB_PASSWORD: ${{secrets.DBPASSWORD}}
         run: python preprocessing.ipynb
+
+
 
   EDSR_Training:
     runs-on: ubuntu-latest
@@ -44,38 +48,88 @@ jobs:
         env:
           DB_USERNAME: github
           DB_PASSWORD: ${{secrets.DBPASSWORD}}
-        run: python edsr_train.py
+        run: python train_edsr.py
 
-  WDSR_Training:
-    runs-on: ubuntu-latest
+
+
+  RDN_Training:
+    runs-on: ubuntu-20.04
+    strategy:
+      matrix:
+        python-version: ["3.6"]
     needs: PreprocessDataset
     steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.6'        
       - name: checkout repo content
         uses: actions/checkout@v3
+        
       - name: install numpy
         run: pip install numpy
       - name: install tensorflow
         run: pip install tensorflow
       - name: install tensorflow-addons
         run: pip install tensorflow-addons
+      - name: install yandex disk
+        run: pip install yadisk
+      - name: install wget
+        run: pip install wget     
+      - name: install tqdm
+        run: pip install tqdm
+      - name: install imageio
+        run: pip install imageio
+      - name: install pyyaml
+        run: pip install pyyaml
+        
       - name: training
         env:
           DB_USERNAME: github
           DB_PASSWORD: ${{secrets.DBPASSWORD}}
-        run: python wdsr_train.py
-        
-  SRGAN_Training:
-    runs-on: ubuntu-latest
+        run: python train_rdn.py
+ 
+ 
+ 
+  ESRGAN_Training:
+    runs-on: windows-latest
+    strategy:
+      matrix:
+        python-version: ["3.6"]
     needs: PreprocessDataset
     steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.6'        
+      - name: checkout repo content
+        uses: actions/checkout@v3
+        
+#      - name: install numpy
+#        run: pip install numpy
+#      - name: install tensorflow
+#        run: pip install tensorflow
+#      - name: install wget
+#        run: pip install wget     
+#      - name: install tqdm
+#        run: pip install tqdm
+#      - name: install imageio
+#        run: pip install imageio
+#      - name: install pyyaml
+#        run: pip install pyyaml
+#      - name: install yandex disk
+#        run: pip install yadisk
       - name: checkout repo content
         uses: actions/checkout@v3
       - name: install numpy
         run: pip install numpy
       - name: install tensorflow
         run: pip install tensorflow
+      - name: install yandex disk
+        run: pip install yadisk
+        
       - name: training
         env:
           DB_USERNAME: github
           DB_PASSWORD: ${{secrets.DBPASSWORD}}
-        run: python srgan_train.py
+        run: python train_srgan.py
