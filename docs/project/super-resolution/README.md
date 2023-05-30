@@ -52,5 +52,5 @@
 Рисунок 5. Диаграмма компонентов
 
 ##### Диаграмма развертывания
-<img src="https://github.com/kivirciks/super-resolution/blob/main/pictures/UML_Deployment.png" width="400">
+<img src="https://github.com/kivirciks/super-resolution/blob/main/pictures/UML_Deploymen.png" width="400">
 Рисунок 6. Диаграмма развертывания
